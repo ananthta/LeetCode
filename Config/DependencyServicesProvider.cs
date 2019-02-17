@@ -1,4 +1,5 @@
 using System;
+using LeetCode.Backtracking;
 using LeetCode.TreesAndGraphs;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -16,7 +17,14 @@ namespace LeetCode.Config
         {
             var serviceCollection = new ServiceCollection();
 
+            serviceCollection.TryAddSingleton<IPhonenumber, PhoneNumber>();
+            serviceCollection.TryAddSingleton<IPermutations, Permutations>();
+            serviceCollection.TryAddSingleton<IPermutations2, Permutations2>();
+            serviceCollection.TryAddSingleton<ICombinationSum, CombinationSum>();
+            serviceCollection.TryAddSingleton<INumberOfIslands, NumberOfIslands>();
+            serviceCollection.TryAddSingleton<ISubSetsGenerator, SubSetsGenerator>();
             serviceCollection.TryAddSingleton<IBinaryTreeConstructor, BinaryTreeConstructor>();
+            serviceCollection.TryAddSingleton<IDoublyLinkedListConverter, DoublyLinkedListConverter>();
             
             return serviceCollection;
         }
