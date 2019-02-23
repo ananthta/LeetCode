@@ -1,5 +1,6 @@
 using System;
 using LeetCode.Backtracking;
+using LeetCode.SortingAndSearching;
 using LeetCode.TreesAndGraphs;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -19,6 +20,7 @@ namespace LeetCode.Config
 
             serviceCollection.TryAddSingleton<IPhonenumber, PhoneNumber>();
             serviceCollection.TryAddSingleton<IPermutations, Permutations>();
+            serviceCollection.TryAddSingleton<IMeetingRooms, MeetingRooms>();
             serviceCollection.TryAddSingleton<IPermutations2, Permutations2>();
             serviceCollection.TryAddSingleton<ICombinationSum, CombinationSum>();
             serviceCollection.TryAddSingleton<INumberOfIslands, NumberOfIslands>();
