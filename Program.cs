@@ -1,10 +1,7 @@
 ﻿using NLog;
 using System;
-using LeetCode.Backtracking;
 using LeetCode.Config;
-using LeetCode.Models;
 using LeetCode.SortingAndSearching;
-using LeetCode.TreesAndGraphs;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LeetCode
@@ -13,9 +10,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {   
-            var target = DependencyServicesProvider.Get().GetService<IMeetingRooms>();
-            var rooms = target.MinMeetingRooms(new Interval[]
-                {new Interval(7, 10), new Interval(2, 4)});
+            var target = DependencyServicesProvider.Get().GetService<IRotatedSortedArray>();
+            var rooms = target.Search(new []{2,5,6,0,0,1,2}, 0);
             
             Console.WriteLine("Hello World!");
         }

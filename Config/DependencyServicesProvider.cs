@@ -1,7 +1,7 @@
 using System;
 using LeetCode.Backtracking;
-using LeetCode.SortingAndSearching;
 using LeetCode.TreesAndGraphs;
+using LeetCode.SortingAndSearching;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -25,6 +25,8 @@ namespace LeetCode.Config
             serviceCollection.TryAddSingleton<ICombinationSum, CombinationSum>();
             serviceCollection.TryAddSingleton<INumberOfIslands, NumberOfIslands>();
             serviceCollection.TryAddSingleton<ISubSetsGenerator, SubSetsGenerator>();
+            serviceCollection.TryAddSingleton<IRotatedSortedArray, RotatedSortedArray>();
+            serviceCollection.TryAddSingleton<IRotatedSortedArray2, RotatedSortedArray2>();
             serviceCollection.TryAddSingleton<IBinaryTreeConstructor, BinaryTreeConstructor>();
             serviceCollection.TryAddSingleton<IDoublyLinkedListConverter, DoublyLinkedListConverter>();
             
