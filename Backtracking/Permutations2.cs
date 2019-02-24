@@ -5,7 +5,7 @@ namespace LeetCode.Backtracking
 {
     public class Permutations2 : IPermutations2
     {
-        public IList<IList<int>> PermuteUnique(int[] nums)
+        public IEnumerable<IList<int>> PermuteUnique(int[] nums)
         {
             var isVisited = new bool[nums.Length];
             var result = new List<IList<int>>();

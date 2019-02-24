@@ -4,6 +4,6 @@ namespace LeetCode.Backtracking
 {
     public interface IPermutations2
     {
-        IList<IList<int>> PermuteUnique(int[] nums);
+        IEnumerable<IList<int>> PermuteUnique(int[] nums);
     }
 }
