@@ -2,8 +2,8 @@ namespace LeetCode.Models
 {
     public class Interval
     {
-        public readonly int start;
-        public readonly int end;
+        public int start { get; private set; }
+        public int end { get; set; }
 
         public Interval()
         {

@@ -23,6 +23,7 @@ namespace LeetCode.Config
             serviceCollection.TryAddSingleton<IMeetingRooms, MeetingRooms>();
             serviceCollection.TryAddSingleton<IPermutations2, Permutations2>();
             serviceCollection.TryAddSingleton<ICombinationSum, CombinationSum>();
+            serviceCollection.TryAddSingleton<IMergeIntervals, MergeIntervals>();
             serviceCollection.TryAddSingleton<INumberOfIslands, NumberOfIslands>();
             serviceCollection.TryAddSingleton<ISubSetsGenerator, SubSetsGenerator>();
             serviceCollection.TryAddSingleton<IRotatedSortedArray, RotatedSortedArray>();
