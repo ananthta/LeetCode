@@ -14,8 +14,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {   
-            var target = DependencyServicesProvider.Get().GetService<ISum3>();
-            var node = target.ThreeSum(new int[]{-2, 0, 1, 1, 2});
+            var target = DependencyServicesProvider.Get().GetService<IMinimumSubArray>();
+            var node = target.MinSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3});
             
             Console.WriteLine("Hello World!");
         }
