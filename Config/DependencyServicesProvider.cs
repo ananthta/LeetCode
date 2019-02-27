@@ -1,4 +1,5 @@
 using System;
+using LeetCode.ArraysAndStrings;
 using LeetCode.Backtracking;
 using LeetCode.DynamicProgramming;
 using LeetCode.SortingAndSearching;
@@ -19,6 +20,7 @@ namespace LeetCode.Config
         {
             var serviceCollection = new ServiceCollection();
 
+            serviceCollection.TryAddSingleton<ISum3, Sum3>();
             serviceCollection.TryAddSingleton<IDecodeWays, DecodeWays>();
             serviceCollection.TryAddSingleton<IPhonenumber, PhoneNumber>();
             serviceCollection.TryAddSingleton<IBuySellStock, BuySellStock>();

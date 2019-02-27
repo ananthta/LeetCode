@@ -1,5 +1,6 @@
 ﻿using NLog;
 using System;
+using LeetCode.ArraysAndStrings;
 using LeetCode.Backtracking;
 using LeetCode.Config;
 using LeetCode.DynamicProgramming;
@@ -13,8 +14,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {   
-            var target = DependencyServicesProvider.Get().GetService<IMinimumWindowSubSequence>();
-            var node = target.MinWindow("abcdebdde", "bde");
+            var target = DependencyServicesProvider.Get().GetService<ISum3>();
+            var node = target.ThreeSum(new int[]{-2, 0, 1, 1, 2});
             
             Console.WriteLine("Hello World!");
         }
