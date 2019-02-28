@@ -26,13 +26,16 @@ namespace LeetCode.Config
             serviceCollection.TryAddSingleton<IBuySellStock, BuySellStock>();
             serviceCollection.TryAddSingleton<IPermutations, Permutations>();
             serviceCollection.TryAddSingleton<IMeetingRooms, MeetingRooms>();
+            serviceCollection.TryAddSingleton<IRainWaterTrap, RainWaterTrap>();
             serviceCollection.TryAddSingleton<IPermutations2, Permutations2>();          
             serviceCollection.TryAddSingleton<ICombinationSum, CombinationSum>();
             serviceCollection.TryAddSingleton<IMergeIntervals, MergeIntervals>();
             serviceCollection.TryAddSingleton<INumberOfIslands, NumberOfIslands>();
             serviceCollection.TryAddSingleton<IMinimumSubArray, MinimumSubArray>();
+            serviceCollection.TryAddSingleton<IMaximumSubArray, MaximumSubArray>();
             serviceCollection.TryAddSingleton<ISubSetsGenerator, SubSetsGenerator>();
             serviceCollection.TryAddSingleton<IMergeSortedLists, MergeSortedLists>();
+            serviceCollection.TryAddSingleton<IValidParenthesis, ValidParenthesis>();
             serviceCollection.TryAddSingleton<IRotatedSortedArray, RotatedSortedArray>();
             serviceCollection.TryAddSingleton<IRotatedSortedArray2, RotatedSortedArray2>();
             serviceCollection.TryAddSingleton<IBinaryTreeConstructor, BinaryTreeConstructor>();

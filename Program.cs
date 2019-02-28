@@ -14,8 +14,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {   
-            var target = DependencyServicesProvider.Get().GetService<IMinimumSubArray>();
-            var node = target.MinSubArrayLen(7, new int[]{2, 3, 1, 2, 4, 3});
+            var target = DependencyServicesProvider.Get().GetService<IRainWaterTrap>();
+            var node = target.Trap(new int[] {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1});
             
             Console.WriteLine("Hello World!");
         }
