@@ -2,6 +2,7 @@ using System;
 using LeetCode.ArraysAndStrings;
 using LeetCode.Backtracking;
 using LeetCode.DynamicProgramming;
+using LeetCode.LinkedLists;
 using LeetCode.SortingAndSearching;
 using LeetCode.TreesAndGraphs;
 using Microsoft.Extensions.DependencyInjection;
@@ -36,9 +37,11 @@ namespace LeetCode.Config
             serviceCollection.TryAddSingleton<ISubSetsGenerator, SubSetsGenerator>();
             serviceCollection.TryAddSingleton<IMergeSortedLists, MergeSortedLists>();
             serviceCollection.TryAddSingleton<IValidParenthesis, ValidParenthesis>();
+            serviceCollection.TryAddSingleton<ITwoNumberAddition, TwoNumberAddition>();
             serviceCollection.TryAddSingleton<IRotatedSortedArray, RotatedSortedArray>();
             serviceCollection.TryAddSingleton<IRotatedSortedArray2, RotatedSortedArray2>();
             serviceCollection.TryAddSingleton<IBinaryTreeConstructor, BinaryTreeConstructor>();
+            serviceCollection.TryAddSingleton<ILinkedListIntersection, LinkedListIntersection>();
             serviceCollection.TryAddSingleton<IMinimumWindowSubSequence, MinimumWindowSubSequence>();
             serviceCollection.TryAddSingleton<IDoublyLinkedListConverter, DoublyLinkedListConverter>();
             
